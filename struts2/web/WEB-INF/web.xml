@@ -8,6 +8,7 @@
         <filter-name>struts2</filter-name>
         <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
         <init-param>
+            <!--修改访问的后缀-->
             <param-name>struts.action.extension</param-name>
             <param-value>do</param-value>
         </init-param>

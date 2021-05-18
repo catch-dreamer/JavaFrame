@@ -25,5 +25,15 @@
         <action name="hello" class="com.hk.web.action.HelloAction" method="sayHello">
             <result name="success">/success.jsp</result>
         </action>
+        <action name="defaultAction">
+            <result name="success">/success.jsp</result>
+        </action>
+    </package>
+    
+    <package name="p2" extends="struts-default" namespace="/user">
+        <action name="*" class="com.hk.web.action.UserAction" method="{1}">
+            <!--1代表第从前到后第一个星号-->
+            <result name="success">/{1}.jsp</result>
+        </action>
     </package>
 </struts>

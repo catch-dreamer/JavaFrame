@@ -8,4 +8,5 @@ package com.hk.web.action;
  *@Version 1.0
  **/
 public class UserAction {
+
 }

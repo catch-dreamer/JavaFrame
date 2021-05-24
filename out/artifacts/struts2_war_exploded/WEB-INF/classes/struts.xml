@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- 配置一个常量 -->
+	
+	
+	<!-- 1.配置访问的后缀名 -->
+	<constant name="struts.action.extension" value="php"></constant>
+	
+	<!-- 2.配置开发模式 -->
+	<constant name="struts.devMode" value="true"></constant>
+	
+	<!-- 
+	package:表示包
+		    name:包名，在struts.xml文件不能有相同的包名,包名是惟一
+		    extends:继承，固定struts-default
+	action:动作
+			name:相当于Servlet的映射路径(@WebServlet)
+			class:处理请求的类,相当一个Servlet类
+			method:处理请求的方法
+	
+	result:结果,写返回的jsp页面
+	 -->
+</struts>
